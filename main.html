@@ -2,17 +2,17 @@
 <head>
 <title>준영's Page</title>
 <link rel="shortcut icon" type="image/x-icon" href="https://github.com/EomjunYoung/eomjunyoung.github.com/blob/master/image/turtle.png?raw=true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <style>
 	body{
 		float:left;
 		width:100%;
 		height:100%;
 		margin:0px;
-	}
-	#top{
-		width:100%;
-		height:50px;
-		background:#878787;
 	}
 	#left{
 		padding:10px;
@@ -21,11 +21,7 @@
 		float:left;
 		background:#aaaaaa;
 	}
-	#left #profile_image{
-		width:180px;
-		height:180px;
-	}
-	#left .icon{
+	.card .icon{
 		margin:5px;
 		width:20px;
 		height:20px;
@@ -41,16 +37,69 @@
 		padding:10px;
 		margin-left:20px;
 	}
+	
+	#middle .list{
+		width : 100%;
+		float : left;
+	}
+
+	#middle .skill{
+		margin:10px;
+	}
 </style>
 </head>
 <body>
-	<div id="top">
-		나 메뉴 될 예정
-	</div>
-	<div id="left">
-		<img id="profile_image" src="https://github.com/EomjunYoung/eomjunyoung.github.com/blob/master/image/turtle.png?raw=true">
-		<p>느려도 꼭 해내겠습니다.<br>
-		아주대 <b>엄준영</b>입니다.</p>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  		<a class="navbar-brand" href="#">Logo</a>
+
+ 	 	<ul class="navbar-nav">
+    			<li class="nav-item dropdown" style="margin-left:50px;">
+      				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        				Menu1
+      				</a>
+      				<div class="dropdown-menu">
+        				<a class="dropdown-item" href="#">Link 1</a>
+        				<a class="dropdown-item" href="#">Link 2</a>
+        				<a class="dropdown-item" href="#">Link 3</a>
+      				</div>
+    			</li>
+    			<li class="nav-item dropdown" style="margin-left:50px;">
+      				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        				Menu2
+      				</a>
+      				<div class="dropdown-menu">
+        				<a class="dropdown-item" href="#">Link 1</a>
+        				<a class="dropdown-item" href="#">Link 2</a>
+        				<a class="dropdown-item" href="#">Link 3</a>
+      				</div>
+    			</li>
+    			<li class="nav-item dropdown" style="margin-left:50px;">
+      				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        				Menu3
+      				</a>
+      				<div class="dropdown-menu">
+        				<a class="dropdown-item" href="#">Link 1</a>
+        				<a class="dropdown-item" href="#">Link 2</a>
+        				<a class="dropdown-item" href="#">Link 3</a>
+      				</div>
+    			</li>
+    			<li class="nav-item dropdown" style="margin-left:50px;">
+      				<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        				Menu4
+      				</a>
+      				<div class="dropdown-menu">
+        				<a class="dropdown-item" href="#">Link 1</a>
+        				<a class="dropdown-item" href="#">Link 2</a>
+        				<a class="dropdown-item" href="#">Link 3</a>
+      				</div>
+    			</li>
+		</ul>
+	</nav>
+	<div class="card" style="width:200px; float:left; margin:10px;">
+		<img class="card-img-top" src="https://github.com/EomjunYoung/eomjunyoung.github.com/blob/master/image/turtle.png?raw=true" alt="Card image">
+  		<div class="card-body">
+    		<h4 class="card-title">엄준영</h4>
+    		<p class="card-text">느려도 꼭 해내겠습니다.</p>
 		<a href="https://github.com/EomjunYoung" target="_blank">
 			<img class="icon" src="https://assets-cdn.github.com/favicon.ico">
 		</a>
@@ -60,15 +109,70 @@
 		<a href="https://eclass2.ajou.ac.kr" target="_blank">
 			<img class="icon" src="https://eclass2.ajou.ac.kr/ui/bb-icon2.ico">
 		</a>
-		<img class="icon" src="https://www.google.co.kr/images/branding/product/ico/googleg_lodp.ico">
-	</div>
+		<a href="https://google.com" target="_blank">
+			<img class="icon" src="https://www.google.co.kr/images/branding/product/ico/googleg_lodp.ico">
+		</a>
+    		<a href="#" class="btn btn-primary">See Profile</a>
+		</div>
+  	</div>
+		
+</div>
 <div id="middle">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+	<ul class="carousel-indicators">
+		<li data-target="#demo" data-slide-to="0" class="active"></li>
+		<li data-target="#demo" data-slide-to="1"></li>
+		<li data-target="#demo" data-slide-to="2"></li>
+  	</ul>
+
+  <!-- The slideshow -->
+  	<div class="carousel-inner">
+    	<div class="carousel-item active">
+      		<img src="la.jpg" alt="Los Angeles">
+		<div class="carousel-caption">
+  	  		<h3>Los Angeles</h3>
+    			<p>We had such a great time in LA!</p>
+  		</div>
+	</div>
+
+    	<div class="carousel-item">
+      		<img src="chicago.jpg" alt="Chicago">
+		<div class="carousel-caption">
+  	  		<h3>Los Angeles</h3>
+    			<p>We had such a great time in LA!</p>
+  		</div>
+    	</div>
+    	<div class="carousel-item">
+      		<img src="ny.jpg" alt="New York">
+		<div class="carousel-caption">
+  	  		<h3>Los Angeles</h3>
+    			<p>We had such a great time in LA!</p>
+  		</div>
+    	</div>
+  	</div>
+
+  <!-- Left and right controls -->
+  	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    		<span class="carousel-control-prev-icon"></span>
+  	</a>
+  	<a class="carousel-control-next" href="#demo" data-slide="next">
+    		<span class="carousel-control-next-icon"></span>
+  	</a>
+</div>
 목표회사(한국/일본) : <span style="color:blue; font-weight:bold; font-family:돋움">삼성</span>,<span style="color:green; font-weight:bold; font-family:돋움">라인</span> /
 <span style="color:dimgray; font-weight:bold; font-family:돋움">소프트뱅크</span>,<span style="color:black; font-weight:bold; font-family:돋움">라쿠텐</span><br>
 보유자격증,어학 : 정보처리기사(11월 24일 취득), 토익(3월 12일 취득)<br>
 취득예정 자격증,어학 : 오픽, JLPT N1<br>
+<br>
 보유 기술<br>
-C / Java
+<div class="list">
+	<img class="skill" src="c.png" width="100px" height="100px">
+	<img class="skill" src="java.png" width="100px" height="100px">
+	<br>
+	<img class="skill" src="android.png" width="100px" height="100px">
+</div>
 <br>
 My GitHub<br>
 <a href="https://github.com/EomjunYoung">https://github.com/EomjunYoung</a><br>
@@ -138,6 +242,8 @@ My Records<br>
 오픈 소스<br>
 Git Chart : <a href="http://ghchart.rshah.org">http://ghchart.rshah.org</a><br>
 JQuery	  : <a href="https://code.jquery.com/jquery-3.2.1.min.js">https://code.jquery.com/jquery-3.2.1.min.js</a>
+Bootstrap
+?
 </div>
 </body>
 </html>
